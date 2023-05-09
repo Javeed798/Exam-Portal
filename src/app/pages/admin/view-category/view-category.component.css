@@ -1,0 +1,17 @@
+.heading {
+    color: maroon;
+    font-size: 35px;
+    margin-top: 22px;
+}
+
+.sub-heading {
+    color: mediumpurple;
+    font-size: medium;
+    margin-left: 55px;
+}
+
+.background {
+    background-color: cornsilk;
+    align-content: center;
+    justify-content: space-around;
+}

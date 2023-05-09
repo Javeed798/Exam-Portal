@@ -1,0 +1,12 @@
+.full-width{
+    width: 100%;
+}
+.background {
+    background-color: antiquewhite;
+    border-radius: 25px;
+    height: 70vh;
+}
+
+.red {
+    color: red;
+}

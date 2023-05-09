@@ -1,0 +1,52 @@
+<mat-card class="background">
+    <h2 class="ml20">Your Profile Details</h2>
+    <mat-card-content>
+        <div class="bootstrap-wrapper">
+            <div class="container">
+                <div class="container text-center">
+                    <img class="profile-image responsive" src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Default_pfp.svg" alt="default image">
+                    <h1 class="mt20">{{user.firstName}} {{user.lastName}}</h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+<!--                        table details  -->
+                            <table class="table text-center">
+                                <tr>
+                                    <td>userId</td>
+                                    <td>{{user.id}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Username</td>
+                                    <td>{{user.username}}</td>
+                                </tr>
+
+                                <tr>
+                                    <td>email</td>
+                                    <td>{{user.email}}</td>
+                                </tr>
+                                <tr *ngIf="user.phone">
+                                    <td>phone</td>
+                                    <td>{{user.phone}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Role</td>
+                                    <td>{{user.authorities[0].authority}}</td>
+                                </tr>
+                                <tr>
+                                    <td>enabled</td>
+                                    <td>{{user.enabled ? "ACTIVE" : "NOT ACTIVE"}}</td>
+                                </tr>
+                            </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </mat-card-content>
+    <div class="text-center">
+        <mat-card-actions class="text-center">
+            <button mat-raised-button color="primary">Update</button>
+            <button mat-raised-button color="accent">Share</button>
+        </mat-card-actions>
+    </div>
+</mat-card>

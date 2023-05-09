@@ -1,0 +1,10 @@
+.full-width{
+    width: 100%;
+}
+.background {
+    background-color: papayawhip;
+    border-radius: 25px;
+    height: 40vh;
+    box-shadow: 10px;
+}
+
